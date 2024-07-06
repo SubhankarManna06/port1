@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Techs</title>
+</head>
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+{% endblock css %}
+<body>
+
+    <body oncontextmenu="return false">
+        <header>
+          <a href="/" class="logo"><i class="fab fa-node-js"></i> Portfolio</a>
+    
+    <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href= {% url 'home' %}>Home</a></li>
+          <li><a href={% url "about" %}>About</a></li>
+          <li><a href={% url "skills" %}>Skills</a></li>
+          <li><a href={% url "projects" %}>Projects</a></li>
+          <li><a href={% url "contact" %}>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar ends -->
+
+{% block content %}
+
+{% endblock content %}
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>Subhankar's Portfolio</h3>
+            <p>
+              Thank you for visiting my personal portfolio website. Connect with
+              me over socials. <br />
+            </p>
+          </div>
+  
+          <div class="box">
+            <h3>Quick Links</h3>
+            <a href={% url "home" %}><i class="fas fa-chevron-circle-right"></i> Home</a>
+            <a href={% url "about" %}><i class="fas fa-chevron-circle-right"></i> About</a>
+            <a href={% url "skills" %}><i class="fas fa-chevron-circle-right"></i> Skills</a>
+            <a href={% url "projects" %}><i class="fas fa-chevron-circle-right"></i> Projects</a>
+          </div>
+  
+          <div class="box">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i>+91 8167002090</p>
+            <p><i class="fas fa-envelope"></i>subhankar.techs@gmail.com</p>
+            <p>
+              <i class="fas fa-map-marked-alt"></i>Panskura, West Bengal,
+              India-721139
+            </p>
+            <div class="share">
+              <a
+                href="https://www.linkedin.com/in/subhankar06/"
+                class="fab fa-linkedin"
+                aria-label="LinkedIn"
+                target="_blank"
+              ></a>
+              <a
+                href="https://github.com/SubhankarManna06"
+                class="fab fa-github"
+                aria-label="GitHub"
+                target="_blank"
+              ></a>
+              <a
+                href="mailto:subhankar.techs@gmail.com"
+                class="fas fa-envelope"
+                aria-label="Mail"
+                target="_blank"
+              ></a>
+              <a
+                href="https://x.com/Mr_Subhankar_06"
+                class="fab fa-twitter"
+                aria-label="Twitter"
+                target="_blank"
+              ></a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Copyright Section -->
+        <h1 class="credit">
+          Copyright Reserved <i class="fa fa-heart pulse"></i> by
+          <a href="https://www.linkedin.com/in/subhankar06/"> Subhankar Manna</a>
+        </h1>
+      </section>
+      <!-- footer section ends -->
+</body>
+</html>

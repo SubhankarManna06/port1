@@ -1,0 +1,27 @@
+{% extends "main.html" %} 
+{% load static %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock css %}
+
+  {% block content %}
+
+  <section class="work" id="work">
+    <h2 class="heading">
+      <i class="fas fa-laptop-code"></i> Projects <span>Made</span>
+    </h2>
+
+    <div class="box-container"></div>
+
+    <div class="viewall">
+      <a href={% url "projects" %} class="btn"
+        ><span>View All</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  {% endblock content %}
+
+

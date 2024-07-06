@@ -1,0 +1,62 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block css %}
+  <link rel="stylesheet" href = {% static "css/about.css" %}>
+{% endblock css %}
+
+{% block content %}
+
+<section class="about" id="about">
+  <h2 class="heading">
+    <i class="fas fa-user-alt"></i> About <span>Me</span>
+  </h2>
+
+  <div class="row">
+    <div class="image">
+      <img draggable="false" class="tilt" src="" alt="" />
+    </div>
+    <div class="content">
+      <h3>I'm Subhankar</h3>
+      <span class="tag">Full Stack Developer</span>
+
+      <p>
+        I am a Web Developer based in Panskura, West Bengal, India.I
+        am a first-year MCA student at the Calcutta Institute of
+        Technology(Uluberia), passionately exploring the world of computer
+        science and technology. 
+        <br><br>
+        I completed my BCA degree from Panskua
+        Banamali College, where my journey into the exciting realm of
+        programming began. 
+        <br><br>
+        I am very passionate about improving my coding
+        skills & developing websites.
+        Working for myself to improve my skills. Love to build Full-Stack
+        clones.
+      </p>
+
+      <div class="box-container">
+        <div class="box">
+          <p><span> email : </span>subhankar.techs@gmail.com</p>
+          <p>
+            <span> place : </span> Panskura, West Bengal, India - 721139
+          </p>
+        </div>
+      </div>
+
+      <!-- resume section -->
+      <div class="resumebtn">
+        <a
+          href=""
+          target="_blank"
+          class="btn"
+          ><span>Resume</span>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

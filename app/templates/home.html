@@ -1,0 +1,86 @@
+{% extends "main.html" %}
+{% load static %}
+ 
+  {% block css %}
+    <link rel="stylesheet" href= {% static "css/main.css" %}>
+  {% endblock css %}
+
+  {% block content %}
+    <!-- social media section starts -->
+    <section class="home" id="home">
+      <div id="particles-js"></div>
+
+      <div class="content">
+        <h2>
+          Hi There,<br />
+          I'm Subhankar <span>Manna</span>
+        </h2>
+        <p>I am into <span class="typing-text"></span></p>
+        <a href={% url "about" %} class="btn"
+          ><span>About Me</span>
+          <i class="fas fa-arrow-circle-down"></i>
+        </a>
+        <div class="socials">
+          <ul class="social-icons">
+            <li>
+              <a
+                class="linkedin"
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/subhankar06/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                class="github"
+                aria-label="GitHub"
+                href="https://github.com/subhankar-techs"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                class="twitter"
+                aria-label="Twitter"
+                href="https://x.com/Mr_Subhankar_06"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+
+            <li>
+              <a
+                class="instagram"
+                aria-label="Instagram"
+                href="https://www.instagram.com/mr_subhankar_06/"
+                ><i class="fab fa-instagram" target="_blank"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          draggable="false"
+          class="tilt"
+          src="./assets/images/hero.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- social media section end -->
+
+    <!-- scroll top btn -->
+    <a
+      href={% url "home" %}
+      aria-label="ScrollTop"
+      class="fas fa-angle-up"
+      id="scroll-top"
+    ></a>
+    <!-- scroll back to top -->
+
+    {% endblock content %}
